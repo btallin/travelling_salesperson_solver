@@ -34,7 +34,9 @@ def _get_distances(
     api_key: str,
     max_threads: int
 ) -> typing.Tuple[float]:
-    np.random.seed(42)
-    distances = tuple(np.random.randint(1000) /
-                      63 for comb in address_combinations)
+    responses = (requests.get(api_address.format(*comb, api_key=api_key))
+                 for comb in address_combinations)
+    json_responses = tuple(r.json() for r in responses)
+    distances = tuple(r["routes"][0]["legs"][0]
+                      ["duration"]["value"] / 60 for r in json_responses)
     return distances

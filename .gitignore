@@ -1,11 +1,5 @@
-.vscode/launch.json
-.vscode/settings.json
-alley_cat_solver.egg-info/top_level.txt
-alley_cat_solver.egg-info/dependency_links.txt
-alley_cat_solver.egg-info/PKG-INFO
-alley_cat_solver.egg-info/SOURCES.txt
-src/__pycache__/__init__.cpython-37.pyc
-src/__pycache__/search_pathes.cpython-37.pyc
-src/__pycache__/search_paths.cpython-37.pyc
-.vscode/.ropeproject/config.py
+src/__pycache__/
+.vscode/
+alley_cat_solver.egg-info/
 .mypy_cache
+.env

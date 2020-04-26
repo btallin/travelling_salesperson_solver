@@ -1,4 +1,6 @@
+import os
 
+import dotenv
 import typing
 import yaml
 
@@ -14,10 +16,13 @@ def main(
         ) -> None:
     with open("config.yaml", "r") as reader:
         config_dict = yaml.safe_load(reader)
+    dotenv.load_dotenv()
+    api_key = os.getenv("API_KEY")
+
     distance_matrix = get_distance_matrix(
         addresses=addresses,
         api_address=config_dict["direction_api"],
-        api_key=""
+        api_key=api_key
     )
     formatted_distance_matrix = adapt_distance_matrix(
         distance_matrix,
@@ -34,12 +39,13 @@ def main(
 
 if __name__ == "__main__":
     ADDRESSES = (
-        "174 Market ave",
-        "1300 Notre Dame ave",
-        "450 Broadway",
-        "510 Hay st",
-        "Jibby st",
-        "1 Midland Park",
-        "75 Forks Market rd"
+        "174 Market ave, Winnipeg, MB",
+        "1300 Notre Dame ave, Winnipeg, MB",
+        "180 Avenue de la Cathédrale, Winnipeg, MB",
+        "450 Broadway, Winnipeg, MB",
+        "510 Hay st, Winnipeg, MB",
+        "Jibby st, Winnipeg, MB",
+        "1 Midland Park, Winnipeg, MB",
+        "75 Forks Market rd, Winnipeg, MB"
     )
     main(ADDRESSES, True, True)
