@@ -5,4 +5,3 @@ setuptools.setup(
     version="0.0.0",
     packages=setuptools.find_packages()
 )
-

@@ -4,7 +4,7 @@ import typing
 import numpy as np
 
 
-def run_search(graph: np.ndarray) -> typing.Tuple[int]:
+def run_search(graph: np.ndarray) -> typing.Tuple[int, ...]:
     root_node = TreeNode(
         index=0,
         parents=tuple()
@@ -19,7 +19,7 @@ class TreeNode:
     def __init__(
         self,
         index: int,
-        parents: typing.Tuple["TreeNode"] = tuple(),
+        parents: typing.Tuple["TreeNode", ...] = tuple(),
         cost: float = 0
     ):
         self.index = index
@@ -39,7 +39,10 @@ class TreeNode:
     def depth(self) -> int:
         return len(self.parents)
 
-    def get_avalible_children(self, graph: np.ndarray) -> typing.Set[int]:
+    def get_avalible_children(
+        self,
+        graph: np.ndarray
+    ) -> typing.Tuple[int, ...]:
         sorted_nodes = np.argsort(graph[self.index]).tolist()
         unconnected_nodes = np.argwhere(np.isnan(
             graph[self.index])).flatten().tolist()
@@ -51,7 +54,7 @@ class TreeNode:
         if (self.depth != terminal_node_index - 1
                 and terminal_node_index in sorted_nodes):
             sorted_nodes.remove(terminal_node_index)
-        return sorted_nodes
+        return tuple(sorted_nodes)
 
     @property
     def is_root(self) -> bool:

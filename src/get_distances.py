@@ -14,9 +14,9 @@ def get_distance_matrix(
     n_addresses: int = len(addresses)
     address2index = {addresses[i]: i for i in range(n_addresses)}
     index_combinations = tuple(combinations(range(len(addresses)), 2))
-    address_combinations: typing.Tuple[typing.List[str, str]] = tuple(
+    address_combinations: typing.Tuple[typing.List[str], ...] = tuple(
         sorted(addresses[i] for i in comb) for comb in index_combinations)
-    distances: typing.Tuple[float] = _get_distances(
+    distances: typing.Tuple[float, ...] = _get_distances(
         address_combinations,
         api_address,
         api_key,
@@ -33,7 +33,7 @@ def _get_distances(
     api_address: str,
     api_key: str,
     max_threads: int
-) -> typing.Tuple[float]:
+) -> typing.Tuple[float, ...]:
     responses = (requests.get(api_address.format(*comb, api_key=api_key))
                  for comb in address_combinations)
     json_responses = tuple(r.json() for r in responses)

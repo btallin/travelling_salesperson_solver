@@ -1,5 +1,7 @@
-src/__pycache__/
 .vscode/
-alley_cat_solver.egg-info/
 .mypy_cache
+.pytest_cache
 .env
+alley_cat_solver.egg-info/
+src/__pycache__/
+tests/__pycache__/
