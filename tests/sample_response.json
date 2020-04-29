@@ -1,0 +1,307 @@
+{
+    "geocoded_waypoints": [
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJBTZ7NENx6lIRV1OHViUSxWo",
+            "types": [
+                "street_address"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJncA1Abpz6lIRQmxqIMI-Azo",
+            "types": [
+                "premise"
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 49.9093961,
+                    "lng": -97.1361056
+                },
+                "southwest": {
+                    "lat": 49.8975959,
+                    "lng": -97.184928
+                }
+            },
+            "copyrights": "Map data \u00a92020 Google",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "5.0 km",
+                        "value": 4992
+                    },
+                    "duration": {
+                        "text": "20 mins",
+                        "value": 1213
+                    },
+                    "end_address": "1300 Notre Dame Ave, Winnipeg, MB R3E 0P4, Canada",
+                    "end_location": {
+                        "lat": 49.9093961,
+                        "lng": -97.18442019999999
+                    },
+                    "start_address": "174 Market Ave, Winnipeg, MB R3B 3L6, Canada",
+                    "start_location": {
+                        "lat": 49.8986627,
+                        "lng": -97.13634139999999
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "19 m",
+                                "value": 19
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 3
+                            },
+                            "end_location": {
+                                "lat": 49.8985859,
+                                "lng": -97.1361056
+                            },
+                            "html_instructions": "Head <b>southeast</b> on <b>Market Ave</b> toward <b>Rorie St</b>",
+                            "polyline": {
+                                "points": "sypoHb}zoQLm@"
+                            },
+                            "start_location": {
+                                "lat": 49.8986627,
+                                "lng": -97.13634139999999
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 117
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 23
+                            },
+                            "end_location": {
+                                "lat": 49.8975959,
+                                "lng": -97.1366635
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Rorie St</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "eypoHt{zoQz@h@BB\\PPFZLx@V"
+                            },
+                            "start_location": {
+                                "lat": 49.8985859,
+                                "lng": -97.1361056
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.3 km",
+                                "value": 274
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 77
+                            },
+                            "end_location": {
+                                "lat": 49.8979656,
+                                "lng": -97.14035419999999
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Bannatyne Ave</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "_spoHb_{oQ}@nG?FCHAN?N@jCBj@@\\@R?rB?VCPCNGF"
+                            },
+                            "start_location": {
+                                "lat": 49.8975959,
+                                "lng": -97.1366635
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.5 km",
+                                "value": 546
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 146
+                            },
+                            "end_location": {
+                                "lat": 49.9002111,
+                                "lng": -97.14710889999999
+                            },
+                            "html_instructions": "Slight <b>right</b> to stay on <b>Bannatyne Ave</b>",
+                            "maneuver": "turn-slight-right",
+                            "polyline": {
+                                "points": "iupoHdv{oQEHGFELGJ[|AcAfEaAlEcAhE{@jE_AjEaAdE"
+                            },
+                            "start_location": {
+                                "lat": 49.8979656,
+                                "lng": -97.14035419999999
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.3 km",
+                                "value": 263
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 45
+                            },
+                            "end_location": {
+                                "lat": 49.898091,
+                                "lng": -97.1487368
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>Frances St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "icqoHl`}oQzCtB`CbBhCjB"
+                            },
+                            "start_location": {
+                                "lat": 49.9002111,
+                                "lng": -97.14710889999999
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.8 km",
+                                "value": 806
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 192
+                            },
+                            "end_location": {
+                                "lat": 49.901307,
+                                "lng": -97.1588249
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Notre Dame Ave</b>/<wbr/><b>Rte 57 W</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "avpoHrj}oQ_AbEaAnE_AhEeAvEIZWlAy@nDKf@Op@q@~CqAzFqA`GMn@YtAEP"
+                            },
+                            "start_location": {
+                                "lat": 49.898091,
+                                "lng": -97.1487368
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 192
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 73
+                            },
+                            "end_location": {
+                                "lat": 49.89998500000001,
+                                "lng": -97.15968590000001
+                            },
+                            "html_instructions": "Slight <b>left</b> onto <b>Maryland St</b>/<wbr/><b>Rte 70 S</b>",
+                            "maneuver": "turn-slight-left",
+                            "polyline": {
+                                "points": "ejqoHri_pQAf@?N?LBd@@HFLBDFFFBD@B@JBJ@h@B\\@|BF"
+                            },
+                            "start_location": {
+                                "lat": 49.901307,
+                                "lng": -97.1588249
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.8 km",
+                                "value": 1810
+                            },
+                            "duration": {
+                                "text": "7 mins",
+                                "value": 393
+                            },
+                            "end_location": {
+                                "lat": 49.90079,
+                                "lng": -97.184928
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Wellington Ave</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "}aqoH`o_pQAfCCxA?TCnBAfBAnBClBCpBEvBA`BC`CAfBGjFIjFIdGClCCjBCrBCrBCnBChBCjBAtBAlBCtBClBCjBC~BAvBEbCA~BOhOIjFEnEArBCbB"
+                            },
+                            "start_location": {
+                                "lat": 49.89998500000001,
+                                "lng": -97.15968590000001
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.0 km",
+                                "value": 952
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 160
+                            },
+                            "end_location": {
+                                "lat": 49.9093437,
+                                "lng": -97.1842594
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Clifton St</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "}fqoHxldpQSA{@EqAE_CImAEsAE_CIeAEw@CeCIyAG}K_@s@Cm@A}BGoBEIAGAKC"
+                            },
+                            "start_location": {
+                                "lat": 49.90079,
+                                "lng": -97.184928
+                            },
+                            "travel_mode": "BICYCLING"
+                        },
+                        {
+                            "distance": {
+                                "text": "13 m",
+                                "value": 13
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 101
+                            },
+                            "end_location": {
+                                "lat": 49.9093961,
+                                "lng": -97.18442019999999
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>Notre Dame Ave</b>/<wbr/><b>Rte 57 E</b><div style=\"font-size:0.9em\">Walk your bicycle</div><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "k|roHrhdpQK^"
+                            },
+                            "start_location": {
+                                "lat": 49.9093437,
+                                "lng": -97.1842594
+                            },
+                            "travel_mode": "BICYCLING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "sypoHb}zoQLm@z@h@`@Tl@Tx@V}@nGCPA^DvDBp@?jCG`@[f@iD~NcAhE{@jEaCpK|GxEhCjB_AbEaCxKoArFmBvIcFlU_@fBAv@Br@HVJLLDNDt@DzCHE`FG|IG~EGxEW`Ue@l`@[n\\a@da@EvEoAGsJ[cK]yQm@_GQKCK^"
+            },
+            "summary": "Wellington Ave",
+            "warnings": [
+                "Bicycling directions are in beta. Use caution \u2013 This route may contain streets that aren't suited for bicycling."
+            ],
+            "waypoint_order": []
+        }
+    ],
+    "status": "OK"
+}
