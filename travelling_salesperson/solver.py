@@ -1,7 +1,8 @@
 import os
+import sys
+import typing
 
 import dotenv
-import typing
 import yaml
 
 from .get_distances import get_distance_matrix
@@ -13,8 +14,9 @@ def solve(
     addresses: typing.List[str],
     start_anywhere: bool = False,
     end_anywhere: bool = False
-        ) -> None:
-    with open("config.yaml", "r") as reader:
+) -> None:
+    pkg_dir = os.path.dirname(__file__)
+    with open(os.path.join(pkg_dir, "config.yaml"), "r") as reader:
         config_dict = yaml.safe_load(reader)
     dotenv.load_dotenv()
     api_key = os.getenv("API_KEY")
