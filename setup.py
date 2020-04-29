@@ -12,6 +12,7 @@ setup(
     author_email="btallin35@gmail.com",
     packages=find_packages(include=["travelling_salesperson"]),
     install_requires=[
+        "dotenv"
         "numpy",
         "requests",
     ]

@@ -1,6 +1,6 @@
 def test_oop_search():
     import numpy as np
-    from src.search_paths import TreeNode
+    from travelling_salesperson.oop_search import TreeNode
     graph = np.array([
         [np.NaN,    0,      0,      0,      np.NaN],
         [np.NaN,    np.NaN, 10,     8,      15],
@@ -20,7 +20,7 @@ def test_oop_search():
 
 def test_functional_search():
     import numpy as np
-    from src.functional_search import run_search
+    from travelling_salesperson.functional_search import run_search
     graph = np.array([
         [np.NaN,    0,      0,      0,      np.NaN],
         [np.NaN,    np.NaN, 10,     8,      15],
