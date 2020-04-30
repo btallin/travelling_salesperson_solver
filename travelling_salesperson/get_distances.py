@@ -6,7 +6,7 @@ import requests
 
 
 def get_distance_matrix(
-    addresses: typing.Tuple[str],
+    addresses: typing.Sequence[str],
     api_address: str,
     api_key: str,
     max_threads: int = 20
@@ -29,7 +29,7 @@ def get_distance_matrix(
 
 
 def _get_distances(
-    address_combinations: typing.Collection[typing.Collection[str]],
+    address_combinations: typing.Sequence[typing.Sequence[str]],
     api_address: str,
     api_key: str,
     max_threads: int
