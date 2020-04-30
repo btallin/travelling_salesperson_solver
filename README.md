@@ -66,6 +66,7 @@ print(best_path)
 * Reveal a feature to solve a problem defined by a weighted graph.
 * Allow access to set the Google Direction mode. Currently it is set to 'bicycling'.
 * Allow access to set the measure for travel cost between nodes. Currently using time. Another option is distance.
+* Add logging
 * Add more purning strategies to reduce the best case time. This will not change the overall time complexity or attempt to address that is is an np-hard problem.
 * Add heuristic techniques using traditional programming. This will allow to for larger graphs to be solved using approximations.
 * Explore heuristic techniques using mashine learning.

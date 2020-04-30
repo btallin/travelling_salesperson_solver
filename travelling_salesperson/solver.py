@@ -11,15 +11,15 @@ from .oop_search import run_search
 
 
 def solve(
-    addresses: typing.List[str],
+    addresses: typing.Sequence[str],
     start_anywhere: bool = False,
     end_anywhere: bool = False
-) -> None:
+) -> typing.Tuple[str, ...]:
     pkg_dir = os.path.dirname(__file__)
     with open(os.path.join(pkg_dir, "config.yaml"), "r") as reader:
         config_dict = yaml.safe_load(reader)
     dotenv.load_dotenv()
-    api_key = os.getenv("API_KEY")
+    api_key = str(os.getenv("API_KEY"))
 
     distance_matrix = get_distance_matrix(
         addresses=addresses,
@@ -36,4 +36,4 @@ def solve(
     if start_anywhere:
         best_path_indices = tuple(i - 1 for i in best_path_indices[1:])
     best_path_addresses = tuple(addresses[i] for i in best_path_indices)
-    return
+    return best_path_addresses
