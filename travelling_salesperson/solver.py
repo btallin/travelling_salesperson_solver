@@ -19,7 +19,10 @@ def solve(
     with open(os.path.join(pkg_dir, "config.yaml"), "r") as reader:
         config_dict = yaml.safe_load(reader)
     dotenv.load_dotenv()
-    api_key = str(os.getenv("API_KEY"))
+    api_key = os.getenv("API_KEY")
+    print(api_key)
+    if api_key is None or api_key == "":
+        raise ValueError("API key in not properly configured.")
 
     distance_matrix = get_distance_matrix(
         addresses=addresses,

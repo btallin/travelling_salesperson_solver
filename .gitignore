@@ -49,5 +49,5 @@ Temporary Items
 *.code-workspace
 *__pycache__
 .*cache
-.env
+*.env
 *.egg-info*

@@ -1,1 +1,2 @@
 recursive-include travelling_salesperson config.yaml
+recursive-include travelling_salesperson .env
