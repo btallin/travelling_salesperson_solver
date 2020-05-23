@@ -20,7 +20,6 @@ def solve(
         config_dict = yaml.safe_load(reader)
     dotenv.load_dotenv()
     api_key = os.getenv("API_KEY")
-    print(api_key)
     if api_key is None or api_key == "":
         raise ValueError("API key in not properly configured.")
 
